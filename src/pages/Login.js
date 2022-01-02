@@ -55,7 +55,7 @@ const  Login =() =>{
               </div>
               <div className="input_container">
                   <label htmlFor="password">Password</label>
-                  <input type="text" name='password' value={password} onChange={handleChange}/>
+                  <input type="password" name='password' value={password} onChange={handleChange}/>
               </div>
               {error ? <p className="error">{error}</p>:null}
               <div className="btn_container" disabled={loading}>

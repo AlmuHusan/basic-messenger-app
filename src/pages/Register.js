@@ -22,7 +22,6 @@ const  Register =() =>{
     const handleSubmit = async e =>{
         e.preventDefault();
         setData({...data,error:null,loading:true})
-        console.log(data);
         if(!name||!email||!password){
             setData({...data,error:"All field are required"});
         }
